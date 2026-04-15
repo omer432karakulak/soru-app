@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470")
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* 🌫️ blur layer */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  padding-top: 60px;
+  color: white;
+}
+
+/* 🧊 GLASS CARD */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔠 TEXT */
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* 📊 PROGRESS BAR */
+.progress {
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-inner {
+  height: 100%;
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  width: 50%;
+  transition: 0.5s;
+}
+
+/* 🔘 BUTTON */
+button {
+  padding: 12px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.primary {
+  background: linear-gradient(to right, #00c9ff, #92fe9d);
+  color: black;
+}
+
+.danger {
+  background: red;
+  color: white;
+}
+
+/* 🧾 INPUT */
+input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  font-size: 16px;
+}
